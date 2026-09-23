@@ -6,16 +6,16 @@ relative_links:
 include:
   - README.md
   - LICENSE.md
-url: https://thingking-machine.github.io
+url: https://interpreting-machine.github.io
 baseurl: /fireworksr
 
-title: Thingking Machine
+title: Interpreting Machine
 description: A machine is a thing. Things can not think. ...but some of them can thingk!
 
 machine:
-  name: Thingking-Machine
-  verb: Thingking
-  instructions_file: thingking.md
+  name: Interpreting-Machine
+  verb: interpret
+  instructions_file: interpreting.md
   token: fireworks
   server: https://localhost:443
   apiUrl: https://api.fireworks.ai/inference/v1/chat/completions
@@ -24,8 +24,8 @@ app:
   worker_name: fireapi.js
 
 lm:
-  model: glm-4p5
-  max_tokens: 4096
+  model: glm-5p3
+  max_tokens: 64000
   reasoning_effort: high
   prompt_truncate_len: 10000
   temperature: 1.0
